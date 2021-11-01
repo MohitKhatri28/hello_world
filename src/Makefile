@@ -3,18 +3,9 @@ CFLAGS=
 LIB=
 
 all:main
-hello:
-	$(CC) $(CFLAGS) -c hello.c 
  
- main:hello
-	$(CC) $(CFLAGS) hello.o main.c -o main
-
-
-myfile:
-	$(CC) $(CFLAGS) -c myfile.c
-
-main:myfile
-	$(CC) $(CFLAGS) myfile.o main.c -o main
+main:
+	$(CC) $(CFLAGS) 59_myfile.c 59_main.c -o main
 
 run:
 	.\main.exe
